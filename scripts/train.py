@@ -3,7 +3,7 @@ from ..models.cnn import CNN
 from ..utils.data_helpers import loaders  
 import torch.nn as nn
 from torch import optim
-
+from ..models.cnn import CNN
 
 def train_model(model, loaders, num_epochs=10, lr=0.001, save_path='models/artifacts/model.pth'):
     criterion = nn.CrossEntropyLoss()
